@@ -1,46 +1,58 @@
 * {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
 }
-
-:focus {
- /* TODO */
+::placeholder{
+  color: white;
 }
 
 body {
-  /* TODO */
-}
-
-input {
- /* TODO */
+  /* background: linear-gradient(to right, rgb(67, 77, 218), rgb(34, 190, 238)); */
 }
 
 .search-container {
- /* TODO */
-}
-.search-container input,
-.search-container .suggestions {
-  /* TODO */
-}
-.search-container input {
- /* TODO */
-}
-.search-container .suggestions {
-   /* TODO */
+  width: 200px;
+  background: linear-gradient(to right,rgb(112, 148, 214), rgb(19, 245, 253) );
+  margin: 45vh auto 0;
 }
 
-ul {
-  /* TODO */
-}
-ul.has-suggestions {
-  /* TODO */
-}
-ul li {
-  /* TODO */
-}
-ul li:hover {
-  /* TODO */
+.search-field{
+  display: flex;
+  align-items: center;
 }
 
 input {
-   /* TODO */
+  flex: 1;
+  height: 40px;
+  padding-left: 5px;
+  border-style: none;
+  border-bottom: 2px solid rgb(55, 0, 255);
+  background: transparent;
+}
+
+input:focus {
+  outline: 1px groove lightgray;
+  border: 1px solid rgb(0, 162, 255);
+  border-radius: 2px;
+}
+
+.suggestions ul{
+  flex: 1;
+}
+
+.suggestions ul li {
+  list-style: none;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+
+.suggestions ul li:hover {
+  background: blueviolet; 
+}
+
+.suggestions{
+  max-height: 252px;
+  overflow-y: hidden;
 }
